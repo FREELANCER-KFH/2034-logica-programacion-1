@@ -1,4 +1,5 @@
-let numeroSecreto = Math.floor(Math.random() * 10) + 1
+let numeroMaximo = 10;
+let numeroSecreto = Math.floor(Math.random() * numeroMaximo) + 1
 let numeroUsuario = 0;
 let intentos = 1;
 //let palabra = ' vez';
@@ -8,7 +9,7 @@ alert('Bienvenido al juego de adivinar el numero secreto');
 alert('Tienes 3 intentos para adivinar el numero secreto');
 
 while (numeroUsuario != numeroSecreto) {
-    numeroUsuario = parseInt(prompt('Ingrese un numero entre 1 y 10'));
+    numeroUsuario = parseInt(prompt(`Ingrese un numero entre 1 y ${numeroMaximo}`));
     console.log(typeof numeroUsuario);
     /*
 Este codigo realiza la comparacion entre el numero secreto y el numero que el usuario ingreso
